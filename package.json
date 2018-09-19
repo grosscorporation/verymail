@@ -1,9 +1,9 @@
 {
   "name": "verymail",
   "version": "1.0.5",
-  "description": "Check that email addresses are really able to accept emails by pinging the DNS and checking for active MX records.",
+  "description": "Confirm if an email address is valid and able to deliver and recieve email messages.",
   "main": "./src/index.js",
-  "respository": "https://github.com/martyndavies/legit",
+  "respository": "https://github.com/GoGross/verymail",
   "devDependencies": {
     "should": "*",
     "mocha": "*"
@@ -14,8 +14,10 @@
   "keywords": [
     "email",
     "check",
-    "validation"
+    "validation",
+    "MX",
+    "pattern"
   ],
-  "author": "Martyn Davies",
+  "author": "Zeal Murapa, Gross Business Systems",
   "license": "MIT"
 }

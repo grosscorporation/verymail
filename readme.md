@@ -1,20 +1,18 @@
-# Legit
+# Verymail
 
-![Travis CI](https://travis-ci.org/martyndavies/legit.svg?branch=master)
-
-A wrapper for the NodeJS Dns.resolveMx method that checks the domain of an email address for valid/existence of MX records.
+Confirm if an email address is valid and able to deliver and recieve email messages.
 
 ## Installation
 
 ```html
-$ npm install legit
+$ npm install verymail
 ```
 ## Usage
 
 ```javascript
-const legit = require("legit");
+const verymail = require("verymail");
 
-legit("validemail@validdomain.com")
+verymail("validemail@validdomain.com")
   .then(result => {
     result.isValid ? console.log("Valid!") : console.log("Invalid!");
     console.log(JSON.stringify(result));
@@ -23,7 +21,7 @@ legit("validemail@validdomain.com")
 
 ```
 
-If an email addresses domain is legit then the object returned will include an `isValid` key that will be set to `true` as well as an `mxArray` key with all the MX record information for the valid domain.
+If an email addresses domain is verymail then the object returned will include an `isValid` key that will be set to `true` as well as an `mxArray` key with all the MX record information for the valid domain.
 
 If the domain has no MX or cannot resolve any MX then it will return `isValid` as `false`.
 
@@ -64,4 +62,4 @@ For a valid email address, you'll get the following response object:
 
 (The MIT License)
 
-Copyright (c) 2015-2018 Martyn Davies, and contributors.
+Copyright (c) 2018 Zeal Murapa, and contributors.
