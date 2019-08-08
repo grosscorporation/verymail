@@ -1,7 +1,5 @@
   <br />
   <br />
-  <br />
-  <br />
 
 [![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verimail.png)](https://verymail.gogross.com)
 

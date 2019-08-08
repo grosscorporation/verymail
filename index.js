@@ -3,6 +3,7 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const request = require ( 'request' );
+const _ = require ( 'lodash' );
 
 /**
  * @class VeryMail
@@ -33,6 +34,10 @@ module.exports = class VerMail {
 		
 	}
 	
+	static async  removeDuplicates() {
+	
+	}
+	
 	async verify () {
 		
 		return new Promise ( async ( resolve, reject ) => {
@@ -41,7 +46,13 @@ module.exports = class VerMail {
 				
 				reject ( "Error, missing API KEY environment variable" )
 				
-			} else {
+			} else if(this.mailingList > 100) {
+				
+				reject ( "You can verify a maximum of 100 email addresses at a time" )
+				
+			}else {
+				
+				let mailingListWithoutDuplicates = await _.uniq(this.mailingList);
 				
 				let url = this.baseURL + '?key=' + this.VERYMAIL_KEY;  // signup for free at docengine.gogross.com
 				
@@ -50,7 +61,7 @@ module.exports = class VerMail {
 					method : 'get',
 					headers : {},
 					body : {
-						mailingList : JSON.stringify ( this.mailingList ),
+						mailingList : JSON.stringify ( mailingListWithoutDuplicates ),
 						options : this.options
 					},
 					json : true

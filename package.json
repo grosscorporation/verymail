@@ -1,12 +1,13 @@
 {
   "name": "verymail",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "Verymail, email address validation API and REST service",
   "main": "index.js",
   "respository": "https://github.com/GoGross/verymail",
   "dependencies": {
     "dotenv": "^5.0.1",
     "http": "0.0.0",
+    "lodash": "^4.17.15",
     "request": "^2.88.0"
   },
   "devDependencies": {

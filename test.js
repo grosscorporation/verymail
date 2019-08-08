@@ -5,7 +5,7 @@ const mail = {
 	options: {
 		saveList : false, // dedicated plans only
 	},
-	mailingList: ["zealmurapa@gmail.com"]
+	mailingList: [ "email1@gmail.com", "email2@live.com", "email3@gogross.com" ]
 };
 
 const veryMail     = new VeryMail ( mail, VERYMAIL_KEY  );
