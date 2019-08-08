@@ -52,7 +52,7 @@ const mail = {
 	options: {
 		saveList : false, // dedicated plans only
 	},
-	mailingList: ["zealmurapa@gmail.com"] // array, limit 100
+	mailingList: ["simon.says@gmail.com"] // array, limit 100
 };
 
 const veryMail     = new VeryMail ( mail, VERYMAIL_KEY  );
