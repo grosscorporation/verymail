@@ -30,7 +30,7 @@ module.exports = class VerMail {
 		this.mailingList  = CONFIG.mailingList;
 		this.options      = CONFIG.options || {};
 		this.VERYMAIL_KEY = VERYMAIL_KEY || process.env.VERYMAIL_KEY;
-		this.baseURL      = (process.env.NODE_ENV = "development") ? "https://localhost:8080/verymail" : "https://api.gogross.com/verymail";
+		this.baseURL      = (process.env.NODE_ENV === "development") ? "https://localhost:8080/verymail" : "https://api.gogross.com/verymail";
 		
 	}
 	
@@ -53,6 +53,15 @@ module.exports = class VerMail {
 			}else {
 				
 				let mailingListWithoutDuplicates = await _.uniq(this.mailingList);
+				
+				console.log("-------------------------");
+				console.log("-------------------------");
+				console.log("-------------------------");
+				console.log(this.baseURL);
+				console.log(process.env.NODE_ENV);
+				console.log("-------------------------");
+				console.log("-------------------------");
+				console.log("-------------------------");
 				
 				let url = this.baseURL + '?key=' + this.VERYMAIL_KEY;  // signup for free at docengine.gogross.com
 				
