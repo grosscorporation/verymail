@@ -1,9 +1,9 @@
 [![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verimail.png)](https://verymail.gogross.com)
 
 ---
-## VeryMail
+## VeryMail Premium
 
-VeryMail, email address validation REST API engine, an thorough aggregated email verification api and mailing list authenticator service.
+VeryMail, email address validation REST API engine, a thorough aggregated email verification api and mailing list authenticator service.
 
 ## :cloud: Installation
 
