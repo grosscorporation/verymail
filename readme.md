@@ -1,4 +1,4 @@
-![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verymail.png)
+![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verimail.png)
 
 ---
 ## VeryMail
