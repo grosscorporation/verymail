@@ -38,14 +38,14 @@ Verymail is CORS enabled and allows Access-Control Headers. This will enable you
 ```
 curl -X GET \
   -H "Content-Type: application/json" \
-  -d '{"mailingList":[]}' \
+  -d '{"mailingList":[], options: {}' \
   https://api.gogross.com/verymail?key=get_free_api_key
 ```
   
 ### NodeJS
 
 ```js
-const VeryMail     = require ( './index' );
+const VeryMail     = require ( 'verymail' );
 const VERYMAIL_KEY   = process.env.VERYMAIL_KEY;  // API Key
 
 const mail = {
