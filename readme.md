@@ -1,4 +1,4 @@
-![FinCharts](https://raw.githubusercontent.com/GoGross/exactip/master/exactip.png)
+![FinCharts](https://raw.githubusercontent.com/GoGross/verymail/master/verymail.png)
 
 ---
 ## VeryMail
@@ -15,7 +15,7 @@ npm install --save verymail
 
 ## Getting started
 
-[![FinCharts](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://exactip.gogross.com)
+[![FinCharts](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://verymail.gogross.com)
 
 Verymail offers for developers a method to connect their applications via our interactive, always live api inorder to keep control of their email comminication.
 
