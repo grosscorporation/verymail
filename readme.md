@@ -38,7 +38,7 @@ VeryMail is CORS enabled and allows Access-Control Headers. This will enable you
 ```
 curl -X GET \
   -H "Content-Type: application/json" \
-  -d '{"mailingList":[], options: {saveList : false, reportAbusive: true,listName: "Launch Campaign"}' \
+  -d '{"mailingList":[], options: {saveList : false, reportAbusive: true, listName: "Launch Campaign"}' \
   https://api.gogross.com/verymail?key=get_free_api_key
 ```
  
