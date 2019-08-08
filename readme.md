@@ -38,10 +38,10 @@ VeryMail is CORS enabled and allows Access-Control Headers. This will enable you
 ```
 curl -X GET \
   -H "Content-Type: application/json" \
-  -d '{"mailingList":[], options: {}' \
+  -d '{"mailingList":[], options: {saveList : false, reportAbusive: true,listName: "Launch Campaign"}' \
   https://api.gogross.com/verymail?key=get_free_api_key
 ```
-  
+ 
 ### NodeJS
 
 ```js
@@ -51,6 +51,7 @@ const VERYMAIL_KEY   = process.env.VERYMAIL_KEY;  // API Key
 const mail = {
 	options: {
 		saveList : false, // dedicated plans only
+		reportAbusive: true
 	},
 	mailingList: ["simon.says@gmail.com"] // array, limit 100
 };
@@ -71,8 +72,3 @@ veryMail.verify ( )
 ```
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 3.0 License, and code samples are licensed under the Apache 2.0 License. For details, see our Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-
-
-
-
-
