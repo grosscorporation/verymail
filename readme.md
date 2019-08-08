@@ -1,9 +1,9 @@
-![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verimail.png)
+[![VeryMail](https://raw.githubusercontent.com/GoGross/verymail/master/verimail.png)](https://verymail.gogross.com)
 
 ---
 ## VeryMail
 
-Verymail, email address validation REST API engine, an thorough aggregated email verification api and mailing list authenticator service.
+VeryMail, email address validation REST API engine, an thorough aggregated email verification api and mailing list authenticator service.
 
 ## :cloud: Installation
 
@@ -17,20 +17,20 @@ npm install --save verymail
 
 [![VeryMail](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://verymail.gogross.com)
 
-Verymail offers for developers a method to connect their applications via our interactive, always live api inorder to keep control of their email comminication.
+VeryMail offers for developers a method to connect their applications via our interactive, always live api inorder to keep control of their email comminication.
 
 ## API
 
-Verymail exposes its data via an Application Programming Interface (API), so developers can interact in a programmatic way with the Verymail Service. This document is the official reference for that functionality.
+VeryMail exposes its data via an Application Programming Interface (API), so developers can interact in a programmatic way with the VeryMail Service. This document is the official reference for that functionality.
 
 ## Authentication
 
 #### Auth: API Key
-All Verymail API endpoints require an access token generated from your dashboard as an API key.
+All VeryMail API endpoints require an access token generated from your dashboard as an API key.
 
 ## Cross-Origin Resource Sharing (CORS) 
 
-Verymail is CORS enabled and allows Access-Control Headers. This will enable you to use our API via Cross-Origin HTTP Requests in application/json, application/x-www-form-urlencoded, multipart/form-data, text/plain. You don't need to specify any headers to make a CORS request as they are enabled by default.
+VeryMail is CORS enabled and allows Access-Control Headers. This will enable you to use our API via Cross-Origin HTTP Requests in application/json, application/x-www-form-urlencoded, multipart/form-data, text/plain. You don't need to specify any headers to make a CORS request as they are enabled by default.
 
 ## :clipboard: Example
 
