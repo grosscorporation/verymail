@@ -1,23 +1,36 @@
 {
   "name": "verymail",
   "version": "1.0.5",
-  "description": "Confirm if an email address is valid and able to deliver and recieve email messages.",
-  "main": "./src/index.js",
+  "description": "Verymail, email address validation API and REST service",
+  "main": "index.js",
   "respository": "https://github.com/GoGross/verymail",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "http": "0.0.0",
+    "request": "^2.88.0"
+  },
   "devDependencies": {
-    "should": "*",
-    "mocha": "*"
+    "dotenv": "^8.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nodemon -r dotenv/config test.js dotenv_config_path=.env --verbose"
   },
   "keywords": [
-    "email",
-    "check",
-    "validation",
-    "MX",
-    "pattern"
+    "Applications Intergration",
+    "Contact and Marketing Forms",
+    "Registration Forms",
+    "Newsletter Signup Forms",
+    "Syntax Check",
+    "Domain & MX Records",
+    "SMTP / Mailbox Check",
+    "Bounce Detection",
+    "Abuse & Spam Trap",
+    "Intel Data Append",
+    "Email safety Guarantee",
+    "Coveres 99% ISPs",
+    "Scalable Cloud",
+    "Abuse reporting"
   ],
-  "author": "Zeal Murapa, Gross Business Systems",
+  "author": "Gross Corporation",
   "license": "MIT"
 }

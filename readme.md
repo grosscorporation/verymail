@@ -1,65 +1,77 @@
-# Verymail
+![FinCharts](https://raw.githubusercontent.com/GoGross/exactip/master/exactip.png)
 
-Confirm if an email address is valid and able to deliver and recieve email messages.
+---
+## VeryMail
 
-## Installation
+Verymail, email address validation REST API engine, an thorough aggregated email verification api and mailing list authenticator service.
 
-```html
-$ npm install verymail
-```
-## Usage
+## :cloud: Installation
 
-```javascript
-const verymail = require("verymail");
-
-verymail("validemail@validdomain.com")
-  .then(result => {
-    result.isValid ? console.log("Valid!") : console.log("Invalid!");
-    console.log(JSON.stringify(result));
-  })
-  .catch(err => console.log(err));
+```sh
+# Using npm
+npm install --save verymail
 
 ```
 
-If an email addresses domain is verymail then the object returned will include an `isValid` key that will be set to `true` as well as an `mxArray` key with all the MX record information for the valid domain.
+## Getting started
 
-If the domain has no MX or cannot resolve any MX then it will return `isValid` as `false`.
+[![FinCharts](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://exactip.gogross.com)
 
-Anything else is considered an error and you'll get it in the `.catch`
+Verymail offers for developers a method to connect their applications via our interactive, always live api inorder to keep control of their email comminication.
 
-## Example Response
-For a valid email address, you'll get the following response object:
+## API
 
-```json
-{
-   "isValid":true,
-   "mxArray":[
-      {
-         "exchange":"aspmx.l.google.com",
-         "priority":1
-      },
-      {
-         "exchange":"alt1.aspmx.l.google.com",
-         "priority":5
-      },
-      {
-         "exchange":"alt2.aspmx.l.google.com",
-         "priority":5
-      },
-      {
-         "exchange":"alt3.aspmx.l.google.com",
-         "priority":10
-      },
-      {
-         "exchange":"alt4.aspmx.l.google.com",
-         "priority":10
-      }
-   ]
-}
+Verymail exposes its data via an Application Programming Interface (API), so developers can interact in a programmatic way with the Verymail Service. This document is the official reference for that functionality.
+
+## Authentication
+
+#### Auth: API Key
+All Verymail API endpoints require an access token generated from your dashboard as an API key.
+
+## Cross-Origin Resource Sharing (CORS) 
+
+Verymail is CORS enabled and allows Access-Control Headers. This will enable you to use our API via Cross-Origin HTTP Requests in application/json, application/x-www-form-urlencoded, multipart/form-data, text/plain. You don't need to specify any headers to make a CORS request as they are enabled by default.
+
+## :clipboard: Example
+
+### NodeJS
+```
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -d '{"mailingList":[]}' \
+  https://api.gogross.com/verymail?key=get_free_api_key
+```
+ 
+
+```js
+const VeryMail     = require ( './index' );
+const VERYMAIL_KEY   = process.env.VERYMAIL_KEY;  // API Key
+
+const mail = {
+	options: {
+		saveList : false, // dedicated plans only
+	},
+	mailingList: ["zealmurapa@gmail.com"] // array, limit 100
+};
+
+const veryMail     = new VeryMail ( mail, VERYMAIL_KEY  );
+veryMail.verify ( )
+	.then ( ( results ) => {
+		
+		console.log ( results );
+		
+	} )
+	.catch ( ( error ) => {
+		
+		console.trace ( error );
+		
+	} );
+
 ```
 
-## License
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 3.0 License, and code samples are licensed under the Apache 2.0 License. For details, see our Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-(The MIT License)
 
-Copyright (c) 2018 Zeal Murapa, and contributors.
+
+
+
