@@ -18,7 +18,7 @@ npm install --save verymail
 
 ## Getting started
 
-[![VeryMail](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://verymail.gogross.com)
+[![VeryMail](https://raw.githubusercontent.com/GoGross/fincharts/master/free-key.jpg)](https://gogross.com/verymail)
 
 VeryMail offers for developers a method to connect their applications via our interactive, always live api inorder to keep control of their email comminication.
 
